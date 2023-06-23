@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hiren_portfolio/static/css/main.752e7973.css",
+    "main.js": "/hiren_portfolio/static/js/main.92e428e2.js",
+    "static/media/background.png": "/hiren_portfolio/static/media/background.78f65f0d57d328c7311a.png",
+    "static/media/dots.png": "/hiren_portfolio/static/media/dots.35f111eb09e71c456e61.png",
+    "index.html": "/hiren_portfolio/index.html",
+    "main.752e7973.css.map": "/hiren_portfolio/static/css/main.752e7973.css.map",
+    "main.92e428e2.js.map": "/hiren_portfolio/static/js/main.92e428e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.752e7973.css",
+    "static/js/main.92e428e2.js"
+  ]
+}
