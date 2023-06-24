@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
-import ContactMe from "./components/ContactMe/ContactMe";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Hero/Intro";
 import Projects from "./components/MyWork/projects";
 import Navbar from "./components/Navbar/Navbar";
-import Services from "./components/Services/Services";
 import Progress from "./components/SkillBars/progress";
 import $ from "jquery";
 import AOS from "aos";
@@ -50,6 +50,7 @@ function App() {
         <Email />
         <Footer />
       </BrowserRouter>
+      <ToastContainer autoClose={3000}/>
     </>
   );
 }

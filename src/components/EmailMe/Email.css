@@ -42,6 +42,9 @@
   font-size: 15px;
   margin-top: 30px;
 }
+.hire-btn:disabled {
+  background-color: #cccccc;
+}
 .reachme-title {
   width: 100%;
 }

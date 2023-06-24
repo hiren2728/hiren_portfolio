@@ -1,17 +1,9 @@
 import "./Services.css";
-import { useGetServicesQuery } from "../../Api/api";
-import { useEffect, useState } from "react";
+import { useGetServicesQuery } from "../../Api/dataAPI";
 
 const Services = () => {
-  const { data: services, isFetching } = useGetServicesQuery();
-  const [servicesDetails, setServicesDetails] = useState(services);
+  const { data: services } = useGetServicesQuery();
   const img_300 = "http://drive.google.com/uc?id=";
-
-  useEffect(() => {
-    setServicesDetails(services);
-    console.log(servicesDetails);
-  }, [servicesDetails, services]);
-  if (isFetching) return "loading";
 
   return (
     <>
@@ -39,7 +31,7 @@ const Services = () => {
                   <p className="service-info">{service.service_description}</p>
                   {/* <h6 className="learn-more">{service.learn_more}</h6> */}
                   <div class="shadow-icon">
-                    <i class={service.shadow_icon}></i>
+                    <i class={service.shadow_icon}/>
                   </div>
                 </div>
               ))}

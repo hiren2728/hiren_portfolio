@@ -1,24 +1,24 @@
 export const useGetHomeDetailsQuery = () => {
     return {
-      data: [
-        {
-          "id": 1,
-          "greeting": "Hello",
-          "name": "Hiren Gajra",
-          "job_title": "Mobile Application Engineer",
-          "par_inro": "Motivated Mobile Application Engineer with 7+ years of experience delivering secure, reliable and high-performance applications. Specializes in front-end user interface design and development.",
-          "avatar_img": "19kETIBzfgaBVNGlcAMoCaQzfi4Ywex6G",
-          "hireMe_link": "gajra.hiren@gmail.com",
-          "cv_link": "http://drive.google.com/file/d/127RCSy1lUZE2sS8IgkxxPcUqbw1rYMOR/view?usp=sharing",
-          "github" : "https://github.com/hiren2728"
-      }
-      ],
-      isFetching: false
+        data: [
+            {
+                "id": 1,
+                "greeting": "Hello",
+                "name": "Hiren Gajra",
+                "job_title": "Mobile Application Engineer",
+                "par_inro": "Motivated Mobile Application Engineer with 7+ years of experience delivering secure, reliable and high-performance applications. Specializes in front-end user interface design and development.",
+                "avatar_img": "19kETIBzfgaBVNGlcAMoCaQzfi4Ywex6G",
+                "hireMe_link": "gajra.hiren@gmail.com",
+                "cv_link": "http://drive.google.com/file/d/127RCSy1lUZE2sS8IgkxxPcUqbw1rYMOR/view?usp=sharing",
+                "github": "https://github.com/hiren2728"
+            }
+        ],
+        isFetching: false
     }
-  }
+}
 
 
-  export const useGetSocialMediaQuery = () => {
+export const useGetSocialMediaQuery = () => {
     return {
         data: [
             {
@@ -34,11 +34,11 @@ export const useGetHomeDetailsQuery = () => {
                 "social_icon": "bx bxl-whatsapp"
             }
         ],
-        isFetching: false 
+        isFetching: false
     }
-  }
+}
 
-  export const useGetLanguagesIconsQuery = () => {
+export const useGetLanguagesIconsQuery = () => {
     return {
         data: [
             {
@@ -77,12 +77,12 @@ export const useGetHomeDetailsQuery = () => {
                 "lang_name": "NodeJS",
                 "exp_level": "Beginner"
             }
-        ], 
+        ],
         isFetching: false
     }
-  }
+}
 
-  export const useGetAboutMeQuery = () => {
+export const useGetAboutMeQuery = () => {
     return {
         data: [
             {
@@ -95,11 +95,11 @@ export const useGetHomeDetailsQuery = () => {
             }
         ]
     }
-  }
+}
 
-  export const useGetContactsQuery = () => {
+export const useGetContactsQuery = () => {
     return {
-        data:  [
+        data: [
             {
                 "id": 1,
                 "icon": "bx bx-phone",
@@ -120,9 +120,9 @@ export const useGetHomeDetailsQuery = () => {
             }
         ]
     }
-  }
+}
 
-  export const useGetProjectsQuery = () => {
+export const useGetProjectsQuery = () => {
     return {
         data: [
             {
@@ -217,4 +217,40 @@ export const useGetHomeDetailsQuery = () => {
             }
         ]
     }
-  }
+}
+
+export const useGetServicesQuery = () => {
+    return {
+        data: [
+            {
+                "id": 2,
+                "icon_image": "1SJB2_Zo9_rjftQdN233Hzs7Esk2ZeLOb",
+                "service_name": "M-Pesa Intergrations",
+                "shadow_icon": "fas fa-code-branch",
+                "service_description": "I sync Mpesa web API with  websites to enable automation of payments verification, disbursements, and payment record management."
+            },
+            {
+                "id": 1,
+                "icon_image": "1Xou8hPivlKoRgGi5p68iSQ90cU0Zozq6",
+                "service_name": "Web Development",
+                "shadow_icon": "fa fa-pen",
+                "service_description": "As a Web developer use coding languages like  HTML, CSS, JavaScript, and Python to build websites and web applications."
+            },
+            {
+                "id": 3,
+                "icon_image": "1KAJwHOx7L9gmvoe0VX8PTl1Y2vqG6etc",
+                "service_name": "Api Intergration",
+                "shadow_icon": "fa fa-snowflake-o",
+                "service_description": "I offer API integration service in existing applications or in software I create from scratch."
+            },
+            {
+                "id": 4,
+                "icon_image": "1_5eSenCCVHI4Jv-sj5GV2pk5YOTxEE0K",
+                "service_name": "Software Development",
+                "shadow_icon": "fa fa-cubes",
+                "service_description": "I offer world-class custom software development services designed specifically for your business and ready to satisfy your exclusive needs."
+            }
+        ],
+
+    }
+}

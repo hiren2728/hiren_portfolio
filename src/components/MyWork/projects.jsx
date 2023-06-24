@@ -56,7 +56,7 @@ const Projects = () => {
         {projectsDetails?.length && (
           <OwlCarousel className="owl-theme" {...options}>
             {projectsDetails?.map((details) => (
-              <div className="project" data-aos="fade-up">
+              <div className="project" data-aos="fade-up" key={details.id.toString()}>
                 <div className="project-img">
                   <img
                     src={`${img_300}${details.about_avatar}`}
@@ -80,20 +80,24 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <h6 className="learnmore">
-                        <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;
+                        <i class="fa fa-laptop" aria-hidden="true"/>&nbsp;
                         Live Demo
                       </h6>
                     </a>
-                    <a
-                      href={details.project_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h6 className="learnmore">
-                        <i class="fa fa-github" aria-hidden="true"></i> &nbsp;
-                        Source Code
-                      </h6>
-                    </a>
+                    {
+                      details.project_link !== null ? (
+                          <a
+                              href={details.project_link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                            <h6 className="learnmore">
+                              <i className="fa fa-github" aria-hidden="true"/> &nbsp;
+                              Source Code
+                            </h6>
+                          </a>
+                      ) : null
+                    }
                   </div>
                 </div>
               </div>
